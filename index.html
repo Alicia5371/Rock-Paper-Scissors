@@ -7,12 +7,17 @@
   </head>
   <script>
     function getComputerChoice() {
-      const random = Math.floor(Math.random() * 3);
-      return random;
+      let random = Math.floor(Math.random() * 3);
 
       if (random == 0) {
-        console.log("Rock");
+        random = "Rock";
+      } else if (random == 1) {
+        random = "Paper";
+      } else {
+        random = "Scissors";
       }
+
+      return random;
     }
     console.log(getComputerChoice());
   </script>
